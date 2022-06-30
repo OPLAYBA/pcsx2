@@ -104,6 +104,10 @@ const char* dialog_message(int ID, bool* updateText)
 			return cvtString("Enable: Removes the offset for interlacing when upscaling.\n"
 				"Can reduce blurring in some games, where the opposite is true most of the time.\n"
 				"Used for ICO to reduce blur.");
+		case IDC_PREROUND_SPRITES:
+			return cvtString("Enable: Attempts to pre-round sprite texel coordinates.\n"
+				"Can improve effects in some games, such as the water in Beyond Good and Evil\n"
+				"and the light bleed in Manhunt");
 		case IDC_ACCURATE_BLEND_UNIT:
 			return cvtString("Control the accuracy level of the GS blending unit emulation.\n\n"
 				"Minimum:\nFast but introduces various rendering issues.\n"

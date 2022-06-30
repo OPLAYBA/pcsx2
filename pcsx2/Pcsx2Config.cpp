@@ -331,6 +331,7 @@ Pcsx2Config::GSOptions::GSOptions()
 	WrapGSMem = false;
 	Mipmap = true;
 	PointListPalette = false;
+	PreRoundSprites = false;
 
 	ManualUserHacks = false;
 	UserHacks_AlignSpriteX = false;
@@ -547,6 +548,7 @@ void Pcsx2Config::GSOptions::ReloadIniSettings()
 	GSSettingBool(OsdShowIndicators);
 	GSSettingBool(OsdShowSettings);
 	GSSettingBool(OsdShowInputs);
+	GSSettingBoolEx(PreRoundSprites, "preround_sprites");
 
 	GSSettingBoolEx(GPUPaletteConversion, "paltex");
 	GSSettingBoolEx(AutoFlushSW, "autoflush_sw");
